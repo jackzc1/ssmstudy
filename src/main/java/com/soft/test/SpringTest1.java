@@ -13,6 +13,7 @@ public class SpringTest1 {
     public void test1() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
         UserService userServiceImpl = (UserService) applicationContext.getBean("userServiceImpl");
+        System.out.println("测试");
         userServiceImpl.findAll();
     }
 }
